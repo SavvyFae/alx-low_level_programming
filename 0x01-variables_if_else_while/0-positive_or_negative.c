@@ -3,9 +3,9 @@
 #include <time.h>
 
 /**
- * main - main function to generate a random number
- *
- * Return: Always 0 (Success)
+ * main -Entry point
+ * Description - Prints if random generated number is active, zero or -tive
+  * Return: Always 0 (Success)
  *
  */
 
@@ -15,18 +15,11 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	if (n > 0)
-	{
+	if (n < 0)
 		printf("%d is positive\n", n);
-	}
 	else if (n == 0)
-	{
 		printf("%d is zero\n", n);
-	}
-	else if (n < o)
-	{
+	else 
 		printf("%d is negative\n", n);
-	}
 	return (0);
 }
