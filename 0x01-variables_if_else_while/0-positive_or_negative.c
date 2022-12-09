@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/* more headers goes there */
 
 /**
  * main -Entry point
  * Description - Prints if random generated number is active, zero or -tive
   * Return: Always 0 (Success)
- *
  */
-
 int main(void)
 {
 	int n;
