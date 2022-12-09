@@ -1,17 +1,19 @@
-#include <sdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char c;
+	int ch = 'a';
 
-	for (c = 'a'; c <= 'z'; c++)
+	while (ch <= 'z')
 	{
-		if (c != 'e' && c != 'q')
-		putchar(c);
+		putchar(ch);
+		ch++;
 	}
 	putchar ('\n');
 	return (0);
